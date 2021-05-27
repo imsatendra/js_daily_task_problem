@@ -291,12 +291,12 @@ const array1 = [1,4,9,16,25];
 
 const arr= [2,3,4,,6,8];
 
-const sum =  arr.map(numberMap => {
-    return numberMap*2
-}).filter(numberFilter => {
-   return numberFilter >10
-}).reduce((sum,number) => {
-    return sum +=number;
-});
+const sum =  arr.map(numberMap =>  numberMap*2
+).filter(numberFilter =>  numberFilter >10
+).reduce((sum,number) =>  sum +=number
+);
 
-console.log(sum);
+console.log("sum :" ,sum);
+
+const mul =  arr.map(number => number*10).filter(number => number > 50).reduce((multiplication,number) => multiplication *= number);
+console.log("mul :",mul);
